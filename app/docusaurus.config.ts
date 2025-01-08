@@ -4,8 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const organizationName = "LayZeeDK";
-const projectName = "github-pages-docusaurus";
+const organizationName = "aasanchez";
+const projectName = "devportal-qt";
 
 
 const config: Config = {

@@ -1,0 +1,14 @@
+{
+  "build": { "dockerfile": ".devcontainer/Dockerfile" },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig"
+      ]
+    }
+  },
+
+  "forwardPorts": [3000]
+}

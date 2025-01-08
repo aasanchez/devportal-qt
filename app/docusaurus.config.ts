@@ -4,21 +4,22 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const organizationName = "LayZeeDK";
+const projectName = "github-pages-docusaurus";
+
+
 const config: Config = {
   title: 'QT Developer Portal',
   tagline: 'More Than Just a Game',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://aasanchez.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/devportal-qt/',
+  url: `https://${organizationName}.github.io`,
+  baseUrl: `/${projectName}/`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'aasanchez', // Usually your GitHub org/user name.
-  projectName: 'devportal-qt', // Usually your repo name.
+  organizationName, // Usually your GitHub org/user name.
+  projectName, // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,7 +41,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/aasanchez/devportal-qt/tree/master/app/',
+            'https://github.com/${organizationName}/${projectName}/tree/master/app/',
         },
         blog: {
           showReadingTime: true,
@@ -51,7 +52,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/${organizationName}/${projectName}tree/main/app/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
